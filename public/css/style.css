@@ -291,3 +291,30 @@ footer{
         padding-top: 20px;
     }
 }
+
+
+/*About us configuration*/
+
+.dev_man_img{
+    width: 350px;
+    height: 350px;
+    margin: 0 30px;
+    border-radius: 50%;
+}
+
+.about-text{
+    padding: 0 5%;
+    color: white;
+    text-align: center;
+}
+
+.about-text h1{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 50px;
+}
+
+.about-text p{
+    padding: 15px 0;
+    font-size: 20px;
+}
