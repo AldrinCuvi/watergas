@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/user_menu.css">
+    <script src="https://kit.fontawesome.com/47a9a5f5e1.js" crossorigin="anonymous"></script>
+    <title>Order</title>
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-plus-circle"></i></span>
+                    <span class="title">Nuevo Pedido</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="title">Mis Pedidos</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                    <span class="title">Salir</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="toogle" onclick="toogleMenu()"></div>
+    
+    <script type="text/javascript">
+        function toogleMenu(){
+            let navigation = document.querySelector('.navigation');
+            navigation.classList.toggle('active');        
+            
+            let toogle = document.querySelector('.toogle');
+            toogle.classList.toggle('active');         
+        }
+    </script>
+</body>
+</html>
