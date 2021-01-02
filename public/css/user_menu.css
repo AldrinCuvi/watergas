@@ -126,3 +126,9 @@ html, body{
         width: 100%;
     }
 }
+
+@media (min-width: 767px){
+    .toogle{
+       right: -50px;
+    }
+}
