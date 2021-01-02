@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*For all content*/
+:root{
+    --blue-a: #3976A8;
+    --blue-b: #47A7F5;
+    --pink: #F5645f;
+    --yellow: #F1F578;
+    --red: #A83531;
+    --white: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Tabla*/
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 25px
+}
+
+h2 {
+    font-size: 25px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.responsive-table li {
+    border-radius: 15px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.responsive-table .table-header {
+    background-color: var(--pink);
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.responsive-table .table-row {
+    background-color: var(--white);
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.responsive-table .col{
+    padding: 0 5px;
+}
+
+.responsive-table .col-1 {
+    flex-basis: 10%;
+}
+
+.responsive-table .col-2 {
+    flex-basis: 15%;
+}
+
+.responsive-table .col-3 {
+    flex-basis: 20%;
+}
+
+.responsive-table .col-4 {
+    flex-basis: 15%;
+}
+
+.responsive-table .col-5 {
+    flex-basis: 40%;
+}
+
+@media all and (max-width: 767px) {
+
+    .container{
+        margin-left: auto;
+    }
+
+    .responsive-table .table-header {
+        display: none;
+   }
+    .responsive-table li {
+        display: block;
+   }
+    .responsive-table .col {
+        flex-basis: 100%;
+   }
+    .responsive-table .col {
+        display: flex;
+        padding: 10px 0;
+   }
+    .responsive-table .col:before {
+        color: var(--blue-a);
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right;
+   }
+}
+
+/*Button*/
+
+.new-order-button{
+    padding: 0 8%;
+}
+
+.no-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: auto;
+    height: 60px;
+    border: 5px solid var(--blue-b);
+    border-radius: 15px;
+    font-size: 25px;
+    cursor: pointer; 
+}
+.no-btn > .text {
+    position: relative;
+    color: transparent;
+    background-image: linear-gradient(90deg, var(--white) 0%, var(--white) 50%, var(--blue-b) 50%, var(--blue-b) 100%);
+    background-repeat: repeat;
+    background-size: 200%;
+    background-position: 100% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: background-position 300ms;
+}
+.no-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--blue-b);
+    transform-origin: 100% 0;
+    transform: scale3d(0, 1, 1);
+    transition: transform 300ms;
+}
+.no-btn:hover .text {
+    background-position: 0 0;
+}
+.no-btn:hover::before {
+    transform-origin: 0 0;
+    transform: scale3d(1, 1, 1);    
+}

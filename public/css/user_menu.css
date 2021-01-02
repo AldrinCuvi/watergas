@@ -28,6 +28,7 @@ html, body{
     background: var(--blue-a);
     transition: .5s;
     overflow: hidden;
+    z-index: 8;
 }
 
 .navigation:hover,
@@ -92,6 +93,7 @@ html, body{
     height: 50px;
     background: var(--blue-a);
     cursor: pointer;
+    z-index: 9;
 }
 
 .toogle.active{
