@@ -129,6 +129,6 @@ html, body{
 
 @media (min-width: 767px){
     .toogle{
-       right: -50px;
+       top: -50px;
     }
 }
