@@ -129,7 +129,8 @@ h2 {
     border: 5px solid var(--blue-b);
     border-radius: 15px;
     font-size: 25px;
-    cursor: pointer; 
+    cursor: pointer;
+    text-decoration: none; 
 }
 .no-btn > .text {
     position: relative;
