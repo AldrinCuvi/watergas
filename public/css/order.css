@@ -38,10 +38,10 @@ h2 {
 
 .responsive-table li {
     border-radius: 15px;
-    padding: 25px 30px;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .responsive-table .table-header {
@@ -59,6 +59,7 @@ h2 {
     background-color: var(--white);
     box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
     text-align: center;
+    align-items: center;
 }
 
 .responsive-table .col{

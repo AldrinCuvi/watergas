@@ -23,15 +23,19 @@ html, body{
 
 .container {
     min-height: 100vh;
+    max-width: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px;
+    flex-direction: column;
+    padding: 55px 25px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/*Barra de búsqueda*/
 .container form {
     width: 100%;
-    max-width: 750px;
     margin-bottom: 0;
 }
 
@@ -46,8 +50,6 @@ html, body{
 .container form .inner-form .input-field {
     height: 50px;
 }
-
-
 
 .container form .inner-form .input-field input {
     height: 100%;
@@ -75,7 +77,6 @@ html, body{
     padding: 0 10px;
     background-color: var(--blue-b);
     border: none;
-    outline: none;
     color: var(--white);
     font-size: 18px;
 }
@@ -102,4 +103,117 @@ html, body{
 
 .container form .inner-form .input-field.third-wrap .btn-search:hover{
     background: var(--blue-a);
+}
+
+/*Tabla*/
+.table{
+    padding: 20px 0;
+}
+
+.responsive-table li {
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.responsive-table .table-header {
+    background-color: var(--pink);
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--white);
+    font-weight: bold;
+    align-items: center;
+}
+
+.responsive-table .table-row {
+    background-color: var(--white);
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: center;
+}
+
+.responsive-table .col{
+    padding: 0 5px;
+}
+
+.responsive-table .col-1 {
+    flex-basis: 15%;
+}
+
+.responsive-table .col-2 {
+    flex-basis: 15%;
+}
+
+.responsive-table .col-3 {
+    flex-basis: 5%;
+}
+
+.responsive-table .col-4 {
+    flex-basis: 10%;
+}
+
+.responsive-table .col-5 {
+    flex-basis: 27%;
+}
+
+.responsive-table .col-6 {
+    flex-basis: 13%;
+}
+
+.responsive-table .col-6 select{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.responsive-table .col-7 {
+    flex-basis: 15%;
+}
+
+.responsive-table .col-7 textarea{
+    width: 100%;
+    max-width: 135px;
+    height: 100%;
+    max-height: 110px;
+    border: none;
+    font-size: 15px;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media all and (max-width: 767px) {
+    .container{
+        margin-left: auto;
+    }
+
+    .responsive-table .table-header {
+        display: none;
+   }
+    .responsive-table li {
+        display: block;
+   }
+    .responsive-table .col {
+        flex-basis: 100%;
+   }
+    .responsive-table .col {
+        display: flex;
+        padding: 10px 0;
+   }
+    .responsive-table .col:before {
+        color: var(--blue-a);
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right;
+   }
+
+   .responsive-table .col-6 select{
+       max-width: 110px;
+   }
 }
