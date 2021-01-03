@@ -20,7 +20,7 @@
         <div class="choose">
             <div class="item">
                 <img src="../img/bidon.jpg" alt="">
-    
+                <h3>Bidón de Agua</h3>
                 <div class="quantity">
                     <button class="btn minus-btn1" type="button">-</button>
                     <input type="text" id="quantity1" value="0">
@@ -30,6 +30,7 @@
 
             <div class="item">
                 <img src="../img/gas.jpg" alt="">
+                <h3>Cilindro de Gas</h3>
                 <div class="quantity">
                     <button class="btn minus-btn2" type="button">-</button>
                     <input type="text" id="quantity2" value="0">
@@ -41,15 +42,18 @@
         <h2>2.- Fecha y hora de entrega:</h2>
         <div class="date-time">
             <input type="datetime-local" class="date-time-input">
-            <input type="submit" value="Guardar" class="save-btn">
         </div>
         <div class="note">
             <h3>Nota:</h3>
-            <p>La hora de entrega puede variar dependiendo de la disponibilidad de productos y personal.</p>
+            <p>La hora de entrega puede variar dependiendo de la disponibilidad de personal y productos.</p>
         </div>
         
-        <h2>3.- Forma de pago:</h2>
+        <h2>3.- Dirección:</h2>
+        <div class="address">
+            <textarea name="" id="address" cols="50" rows="3" placeholder="Máximo 100 caracteres." maxlength="100"></textarea>
+        </div>
 
+        <h2>4.- Forma de pago:</h2>
         <label class="payment-method">
             <input type="checkbox" class="checkbox">
             <div class="option_inner">

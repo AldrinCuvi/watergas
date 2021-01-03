@@ -52,6 +52,7 @@ h2 {
     text-align: center;
     color: var(--white);
     font-weight: bold;
+    align-items: center;
 }
 
 .responsive-table .table-row {
@@ -65,15 +66,15 @@ h2 {
 }
 
 .responsive-table .col-1 {
-    flex-basis: 10%;
+    flex-basis: 20%;
 }
 
 .responsive-table .col-2 {
-    flex-basis: 15%;
+    flex-basis: 10%;
 }
 
 .responsive-table .col-3 {
-    flex-basis: 20%;
+    flex-basis: 15%;
 }
 
 .responsive-table .col-4 {
@@ -159,4 +160,19 @@ h2 {
 .no-btn:hover::before {
     transform-origin: 0 0;
     transform: scale3d(1, 1, 1);    
+}
+
+.checkout-btn{
+    margin: 20px;
+    font-size: 25px;
+    padding: 15px;
+    background: var(--pink);
+    border: 0px;
+    border-radius: 15px;
+    color: var(--white);
+}
+
+
+.checkout-btn:hover{
+    background: var(--yellow);
 }

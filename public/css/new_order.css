@@ -49,6 +49,12 @@ html, body{
     padding: 15px 0;
 }
 
+.item h3{
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
 .quantity{
     display: flex;
     justify-content: center;
@@ -89,25 +95,28 @@ html, body{
 
 .date-time .date-time-input{
     border: 1px solid var(--blue-b);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     height: 43px;
     padding: 0 10px;
 }
 
-.date-time .save-btn{
-    font-size: 20px;
+.note{
     padding: 10px;
     margin: 10px;
-    background: var(--blue-b);
-    border: 0px;
-    border-radius: 10px;
+    max-width: 400px;
+    background:var(--red);
     color: var(--white);
-    cursor: pointer;
+    font-size: 10px;
 }
 
-.save-btn:hover{
-    background: var(--blue-a);
+.address textarea{
+    padding: 10px;
+    margin: 10px;
+    max-width: 300px;
+    border: 1px solid var(--blue-b);
+    font-size: 18px;
+    font-family: 'Monserrat', sans-serif;
 }
 
 .container .payment-method{
@@ -209,11 +218,3 @@ html, body{
 
 }
 
-.note{
-    padding: 10px;
-    margin: 10px;
-    max-width: 400px;
-    background:var(--red);
-    color: var(--white);
-    font-size: 10px;
-}

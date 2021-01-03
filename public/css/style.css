@@ -159,6 +159,7 @@ nav ul li a:hover, nav ul li a:focus{
     border-radius: 15px;
     font-size: 2rem;
     cursor: pointer;
+    text-decoration: none;
 }
 .horizontal1 > .text {
     position: relative;
@@ -203,6 +204,7 @@ nav ul li a:hover, nav ul li a:focus{
     border-radius: 15px;
     font-size: 2rem;
     cursor: pointer;
+    text-decoration: none;
 }
 .horizontal2 > .text {
     position: relative;
