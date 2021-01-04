@@ -16,11 +16,3 @@ sign_up_btn.addEventListener('click', () => {
 sign_in_btn.addEventListener('click', () => {
     container.classList.remove("sign-up-mode");
 });
-
-signin.addEventListener('click', () => {
-    location.replace("order.html")
-}); 
-
-signup.addEventListener('click', () => {
-    location.replace("new_order.html")
-}); 

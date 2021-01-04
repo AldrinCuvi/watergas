@@ -17,13 +17,22 @@
                     </div>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Correo">
+                        <label for="email1" class="label">Correo</label>
+                        <input type="email" id="email1" placeholder="Correo">
+                        <i class="icon icon-success hidden fas fa-check-circle"></i>
+                        <i class="icon icon-error hidden fas fa-exclamation-circle"></i>
+                        <span class="error-message"></span>
+
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Contraseña">
+                        <label for="password1" class="label">Contraseña</label>
+                        <input type="password" id="password1" placeholder="Contraseña" minlength="8" maxlength="15">
+                        <i class="icon icon-success hidden fas fa-check-circle"></i>
+                        <i class="icon icon-error hidden fas fa-exclamation-circle"></i>
+                        <span class="error-message"></span>
                     </div>
-                    <button type="button" id="signin" class="btn solid">Ingresar</button>
+                    <button type="submit" id="signin" class="btn solid">Ingresar</button>
                 </form>
                 
                 <form action="" class="sign-up-form">
@@ -32,21 +41,37 @@
                     </div>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Nombre">
+                        <label for="name" class="label">Nombre</label>
+                        <input type="text" id="name" placeholder="Nombre">
+                        <i class="icon icon-success hidden fas fa-check-circle"></i>
+                        <i class="icon icon-error hidden fas fa-exclamation-circle"></i>
+                        <span class="error-message"></span>
                     </div>
                     <div class="input-field">
                         <i class="fas fa-envelope"></i>
-                        <input type="text" placeholder="Correo">
+                        <label for="email2" class="label">Correo</label>
+                        <input type="email" id="email2" placeholder="Correo">
+                        <i class="icon icon-success hidden fas fa-check-circle"></i>
+                        <i class="icon icon-error hidden fas fa-exclamation-circle"></i>
+                        <span class="error-message"></span>
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Contraseña">
+                        <label for="password2" class="label">Contraseña</label>
+                        <input type="password" id="password2" placeholder="Contraseña" minlength="8">
+                        <i class="icon icon-success hidden fas fa-check-circle"></i>
+                        <i class="icon icon-error hidden fas fa-exclamation-circle"></i>
+                        <span class="error-message"></span>
                     </div>
                     <div class="input-field">
                         <i class="fas fa-mobile"></i>
-                        <input type="text" placeholder="Teléfono/Celular">
+                        <label for="phone" class="label">Celular</label>
+                        <input type="tel" id="phone" placeholder="Teléfono" maxlength="10">
+                        <i class="icon icon-success hidden fas fa-check-circle"></i>
+                        <i class="icon icon-error hidden fas fa-exclamation-circle"></i>
+                        <span class="error-message"></span>
                     </div>
-                    <button type="button" id="signup" class="btn solid">Registrarse</button>
+                    <button type="submit" id="signup" class="btn solid">Registrarse</button>
                 </form>
             </div>
         </div>
@@ -73,5 +98,7 @@
     </div>
 
     <script src="../js/log.js"></script>
+    <script src="../js/sign_in.js"></script>
+    <script src="../js/sign_up.js"></script>
 </body>
 </html>
