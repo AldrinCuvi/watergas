@@ -192,19 +192,57 @@ html, body{
 }
 
 /*Checkout Order Button*/
-
-.checkout-btn{
-    margin: 20px;
-    font-size: 25px;
-    padding: 15px;
-    background: var(--pink);
-    border: 0px;
-    border-radius: 15px;
-    color: var(--white);
+.check-order-button{
+    padding: 20px 0;
 }
 
-.checkout-btn:hover{
-    background: var(--yellow);
+.co-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 2000px;
+    height: 60px;
+    padding: 10px 20px;
+    border: 1px solid var(--blue-b);
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.co-btn i{
+    padding-right: 5px;
+}
+
+.co-btn > .text {
+    position: relative;
+    color: transparent;
+    background-image: linear-gradient(90deg, var(--white) 0%, var(--white) 50%, var(--blue-b) 50%, var(--blue-b) 100%);
+    background-repeat: repeat;
+    background-size: 200%;
+    background-position: 100% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: background-position 300ms;
+}
+.co-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--blue-b);
+    transform-origin: 100% 0;
+    transform: scale3d(0, 1, 1);
+    transition: transform 300ms;
+}
+.co-btn:hover .text {
+    background-position: 0 0;
+}
+.co-btn:hover::before {
+    transform-origin: 0 0;
+    transform: scale3d(1, 1, 1);    
 }
 
 @media (max-width: 787px){

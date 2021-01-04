@@ -65,11 +65,19 @@
             </div>
         </label>
 
-        <button type="button" class="checkout-btn">Confirmar pedido</button>
+        <div class="check-order-button">
+            <a class="co-btn">
+                <span class="text" onclick="saveFunction()"><i class="fas fa-check-circle"></i>Confirmar</span>
+            </a>
+        </div>
   
     </div>
     
     <script>
+        function saveFunction(){
+            alert("¡Su pedido fue generado con éxito!")
+        }
+
         //Incremetar y restar valor de input
         let valueCount1, valueCount2;
         

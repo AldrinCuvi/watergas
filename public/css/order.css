@@ -21,19 +21,27 @@ html, body{
     font-family: 'Montserrat', sans-serif;
 }
 
-/*Tabla*/
-
 .container {
+    min-height: 100vh;
     max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 25px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 25px
 }
 
 h2 {
     font-size: 25px;
     padding: 20px 0;
     text-align: center;
+}
+
+/*Tabla*/
+.responsive-table{
+    width: 100%;
 }
 
 .responsive-table li {
@@ -87,7 +95,6 @@ h2 {
 }
 
 @media all and (max-width: 767px) {
-
     .container{
         margin-left: auto;
     }
@@ -115,9 +122,8 @@ h2 {
 }
 
 /*Button*/
-
 .new-order-button{
-    padding: 0 8%;
+    padding: 20px 0px;
 }
 
 .no-btn {
@@ -127,11 +133,15 @@ h2 {
     position: relative;
     width: auto;
     height: 60px;
-    border: 5px solid var(--blue-b);
-    border-radius: 15px;
+    padding: 0px 10px;
+    border: 1px solid var(--blue-b);
     font-size: 25px;
     cursor: pointer;
     text-decoration: none; 
+}
+
+.no-btn i{
+    padding-right: 5px;
 }
 .no-btn > .text {
     position: relative;
@@ -162,19 +172,4 @@ h2 {
 .no-btn:hover::before {
     transform-origin: 0 0;
     transform: scale3d(1, 1, 1);    
-}
-
-.checkout-btn{
-    margin: 20px;
-    font-size: 25px;
-    padding: 15px;
-    background: var(--pink);
-    border: 0px;
-    border-radius: 15px;
-    color: var(--white);
-}
-
-
-.checkout-btn:hover{
-    background: var(--yellow);
 }

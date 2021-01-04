@@ -217,3 +217,57 @@ html, body{
        max-width: 110px;
    }
 }
+
+/*Button*/
+.save-changes-button{
+    padding: 0 8%;
+}
+
+.sc-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 2000px;
+    height: 60px;
+    padding: 10px 20px;
+    border: 1px solid var(--blue-b);
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sc-btn i{
+    padding-right: 5px;
+}
+
+.sc-btn > .text {
+    position: relative;
+    color: transparent;
+    background-image: linear-gradient(90deg, var(--white) 0%, var(--white) 50%, var(--blue-b) 50%, var(--blue-b) 100%);
+    background-repeat: repeat;
+    background-size: 200%;
+    background-position: 100% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: background-position 300ms;
+}
+.sc-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--blue-b);
+    transform-origin: 100% 0;
+    transform: scale3d(0, 1, 1);
+    transition: transform 300ms;
+}
+.sc-btn:hover .text {
+    background-position: 0 0;
+}
+.sc-btn:hover::before {
+    transform-origin: 0 0;
+    transform: scale3d(1, 1, 1);    
+}
