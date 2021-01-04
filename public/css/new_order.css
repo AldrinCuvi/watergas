@@ -86,19 +86,37 @@ html, body{
     font-weight: 300;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
 .date-time{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 10px 0;
 }
 
-.date-time .date-time-input{
+.date-time .date-input{
     border: 1px solid var(--blue-b);
     font-size: 18px;
     font-weight: 300;
     height: 43px;
     padding: 0 10px;
+}
+
+.date-time .time-input{
+    border: 1px solid var(--blue-b);
+    font-size: 18px;
+    font-weight: 300;
+    height: 43px;
+    padding: 0 10px;
+    margin-top: 10px;
 }
 
 .note{
