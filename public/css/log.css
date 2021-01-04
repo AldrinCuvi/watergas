@@ -26,6 +26,7 @@ html, body{
 .logotipo{
     height: auto;
     width: 200px;
+    font-family: 'Monserrat', sans-serif;
 }
 
 .container{
