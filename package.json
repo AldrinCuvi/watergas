@@ -1,0 +1,23 @@
+{
+  "name": "watergas",
+  "version": "1.0.0",
+  "description": "WEB PROJECT FOR \"OPTATIVA I\" ABOUT QUARANTINE GAS AND WATER ORDERS (Quarantine time).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AldrinCuvi/watergas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AldrinCuvi/watergas/issues"
+  },
+  "homepage": "https://github.com/AldrinCuvi/watergas#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
